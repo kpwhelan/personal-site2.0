@@ -5,8 +5,8 @@ import PrimaryButton from "../PrimaryButton";
 
 export default function WhyChooseMeComponent({  }) {
     return (
-        <div>
-            <div className="text-center w-[70%] mx-auto">
+        <>
+            <div className="text-center w-[70%] mx-auto mb-2 lg:mb-0">
                 <h2 className="text-4xl">
                     Unlock the Full Potential of Your Web Project with Me
                 </h2>
@@ -17,8 +17,8 @@ export default function WhyChooseMeComponent({  }) {
                 </p>
             </div>
 
-            <div className="lg:grid md:grid-cols-3 gap-6 text-center w-[75%] mx-auto mt-10">
-                <div className="h-32 w-[75%] mt-72 bg-my-sage absolute">
+            <div className="lg:grid lg:grid-cols-3 gap-6 text-center bg-my-sage lg:bg-white xl:w-[75%] mx-auto mt-10 py-2 lg:py-0">
+                <div className="h-32 w-[100%] xl:w-[75%] mt-72 bg-my-sage absolute">
 
                 </div>
                 <Card className="w-[80%] p-2 mx-auto">
@@ -33,7 +33,7 @@ export default function WhyChooseMeComponent({  }) {
                     </CardBody>
                 </Card>
 
-                <Card className="w-[80%] p-2 mx-auto">
+                <Card className="w-[80%] p-2 mx-auto mt-2 lg:mt-2">
                     <FontAwesomeIcon icon={faPhoneVolume} size="3x" />
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -45,7 +45,7 @@ export default function WhyChooseMeComponent({  }) {
                     </CardBody>
                 </Card>
 
-                <Card className="w-[80%] p-2 mx-auto">
+                <Card className="w-[80%] p-2 mx-auto mt-2 lg:mt-2">
                     <FontAwesomeIcon icon={faPeopleArrows} size="3x" />
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -57,7 +57,7 @@ export default function WhyChooseMeComponent({  }) {
                     </CardBody>
                 </Card>
 
-                <Card className="w-[80%] p-2 mx-auto">
+                <Card className="w-[80%] p-2 mx-auto mt-2 lg:mt-2">
                     <FontAwesomeIcon icon={faMicrochip} size="3x" />
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -69,7 +69,7 @@ export default function WhyChooseMeComponent({  }) {
                     </CardBody>
                 </Card>
 
-                <Card className="w-[80%] p-2 mx-auto">
+                <Card className="w-[80%] p-2 mx-auto mt-2 lg:mt-2">
                     <FontAwesomeIcon icon={faHandshakeAngle} size="3x" />
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -81,7 +81,7 @@ export default function WhyChooseMeComponent({  }) {
                     </CardBody>
                 </Card>
 
-                <Card className="w-[80%] p-2 mx-auto">
+                <Card className="w-[80%] p-2 mx-auto mt-2 lg:mt-2">
                     <FontAwesomeIcon icon={faHandFist} size="3x" />
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -100,6 +100,6 @@ export default function WhyChooseMeComponent({  }) {
                     <p className='text-2xl'>Get Started Here!</p>
                 </PrimaryButton>
             </div>
-        </div>
+        </>
     )
 }
