@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume, faHandFist, faMicrochip, faBrain, faHandshakeAngle, faPeopleArrows } from "@fortawesome/free-solid-svg-icons";
+import PrimaryButton from "../PrimaryButton";
 
 export default function WhyChooseMeComponent({  }) {
     return (
@@ -16,7 +17,7 @@ export default function WhyChooseMeComponent({  }) {
                 </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 text-center w-[75%] mx-auto mt-10">
+            <div className="lg:grid md:grid-cols-3 gap-6 text-center w-[75%] mx-auto mt-10">
                 <div className="h-32 w-[75%] mt-72 bg-my-sage absolute">
 
                 </div>
@@ -87,10 +88,17 @@ export default function WhyChooseMeComponent({  }) {
                             Dedication to Your Success
                         </Typography>
                         <Typography>
-                        Your success is my success. I'm committed to helping you achieve your online goals, whether it's boosting your brand's visibility, increasing sales, or enhancing user engagement.
+                            Your success is my success. I'm committed to helping you achieve your online goals, whether it's boosting your brand's visibility, increasing sales, or enhancing user engagement.
                         </Typography>
                     </CardBody>
                 </Card>
+            </div>
+
+            <div className="text-center mt-20">
+                <p className="text-2xl">Let's Build Something Amazing Together!</p>
+                <PrimaryButton className='bg-my-sage mt-2'>
+                    <p className='text-2xl'>Get Started Here!</p>
+                </PrimaryButton>
             </div>
         </div>
     )
