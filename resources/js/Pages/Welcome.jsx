@@ -36,7 +36,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <YouPlusMeComponent />
             </YouPlusMeContainer>
 
-            <div className='text-center w-[60%] mx-auto mt-8'>
+            <div className='text-center w-[90%] lg:w-[60%] mx-auto mt-8'>
                 <p className='font-my-handwritten-font text-my-gray text-3xl'>Your website is your virtual handshake with the world.
                 <br/> Make it firm, friendly, and memorable... </p>
             </div>
