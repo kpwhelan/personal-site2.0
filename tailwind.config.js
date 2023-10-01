@@ -21,7 +21,7 @@ export default withMT({
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                'my-handwritten-font': 'Delta Gothic One'
+                'my-handwritten-font': 'Gabarito'
             },
         },
     },

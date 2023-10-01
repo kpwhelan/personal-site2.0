@@ -5,7 +5,7 @@ export default function YouPlusMeComponent() {
     const opacityValue = 0.7;
 
     return (
-        <div className="flex items-center justify-around mt-10 max-w-[80%] mx-auto">
+        <div className="flex items-center justify-between md:justify-around mt-10  mx-auto">
             <div className="text-center">
                 <FontAwesomeIcon icon={faPersonRays} size="8x" opacity={opacityValue}/>
                 <p className="text-4xl">You</p>

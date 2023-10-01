@@ -17,7 +17,7 @@ export default function WhyChooseMeComponent({  }) {
                 </p>
             </div>
 
-            <div className="lg:grid lg:grid-cols-3 gap-6 text-center bg-my-sage lg:bg-white xl:w-[75%] mx-auto mt-10 py-2 lg:py-0">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-6 text-center bg-my-sage lg:bg-white xl:w-[75%] mx-auto mt-10 py-2 lg:py-0">
                 <div className="h-32 w-[100%] xl:w-[75%] mt-72 bg-my-sage absolute">
 
                 </div>

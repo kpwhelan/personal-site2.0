@@ -32,7 +32,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <WhyChooseMeComponent  />
             </WhyChooseMeContainer>
 
-            <YouPlusMeContainer className={"border-t-2 border-t-my-sage mt-20 pt-20 w-[60%] mx-auto"}>
+            <YouPlusMeContainer className={"border-t-2 border-t-my-sage mt-20 pt-20 w-[90%] md:w-[60%] mx-auto"}>
                 <YouPlusMeComponent />
             </YouPlusMeContainer>
 
@@ -41,7 +41,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <br/> Make it firm, friendly, and memorable... </p>
             </div>
 
-            <ServicesOfferedContainer className={'border-t-2 border-t-my-sage mt-20 pt-20 w-[75%] mx-auto'}>
+            <ServicesOfferedContainer className={'border-t-2 border-t-my-sage mt-20 pt-20 w-[95%] md:w-[75%] mx-auto'}>
                 <ServicesOfferedComponent />
             </ServicesOfferedContainer>
 
