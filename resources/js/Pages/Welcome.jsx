@@ -17,6 +17,7 @@ import AreYouReadyComponent from '@/Components/WelcomePage/AreYouReadyComponent'
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
+            <Head title="Welcome" />
             <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
 
             <WelcomeComponentContainer className={"flex md:justify-center text-my-gray mx-auto"}>
