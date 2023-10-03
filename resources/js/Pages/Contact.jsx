@@ -22,7 +22,7 @@ export default function Contact() {
     const [showMessage, setShowMessage] = useState(false);
     const [message, setMessage] = useState('');
     const [messageColor, setMessageColor] = useState('');
-    const [displayForm, setDisplayForm] = useState(false);
+    const [displayForm, setDisplayForm] = useState(true);
 
     // useEffect(() => {
     //     return () => {
@@ -42,15 +42,7 @@ export default function Contact() {
         .then(response => {
             if (response.data.success) {
                 reset();
-                setShowMessage(true);
-                setMessageColor('green');
-                setMessage(response.data.message);
-
-                setTimeout(() => {
-                    setShowMessage(false);
-                    setMessageColor('');
-                    setMessage('');
-                }, 7000);
+                setDisplayForm(false);
             }
         })
         .catch(error => {
