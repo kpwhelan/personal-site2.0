@@ -18,7 +18,8 @@ export default function Footer({ className }) {
                 <a href="https://linkedin.com/in/kpwhelan" target="_blank" className="mx-2"><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></a>
             </div>
 
-            <Menu className="md:hidden">
+            <div className="md:hidden">
+            <Menu>
                 <MenuHandler>
                     <Button className="bg-white border-2 border-my-sage text-my-gray">Social Media</Button>
                 </MenuHandler>
@@ -28,6 +29,8 @@ export default function Footer({ className }) {
                     <MenuItem><a href="https://linkedin.com/in/kpwhelan" target="_blank" className="mx-2"><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></a></MenuItem>
                 </MenuList>
             </Menu>
+            </div>
+
         </div>
     )
 }

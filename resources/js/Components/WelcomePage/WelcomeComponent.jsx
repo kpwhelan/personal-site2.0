@@ -10,7 +10,7 @@ export default function WelcomeComponent({ className }) {
                 </h1>
 
                 <p className="mt-6 text-my-light-gray">
-                    If this is you're first to here, welcome! <br/>
+                    If this is you're first time here, welcome! <br/>
                     Relax, take a look around, hit that <span>contact</span> button if you have any questions!
                 </p>
                 <p className="mt-2 text-my-light-gray">
