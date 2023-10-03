@@ -65,7 +65,7 @@ export default function Contact() {
             <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
 
             {displayForm &&
-                <form onSubmit={submit} className='w-[50%] mx-auto mt-10'>
+                <form onSubmit={submit} className='w-[80%] lg:w-[50%] mx-auto mt-10'>
                     <div className='mb-4 flex justify-between items-center'>
                         <div>
                             <h1 className='text-lg'>Contact Form</h1>
@@ -139,7 +139,7 @@ export default function Contact() {
                     {showMessage &&
                         <div className={`p-4 my-4 text-sm text-white-800 rounded-lg bg-${messageColor}-50 dark:bg-gray-800 dark:text-white-400" role="alert transition ease-in-out`}>
                             <p>{message}</p>
-                    </div>
+                        </div>
                     }
 
                     <div className="flex items-center justify-end mt-4">
