@@ -34,6 +34,10 @@ Route::get('/contact', function () {
     return Inertia::render('Contact', []);
 })->name('contact');
 
+Route::get('/blog', function() {
+    return Inertia::render('Blog', []);
+})->name('blog');
+
 Route::post('/contact', [ContactController::class, 'postContact'])->name('send-contact');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('get-admin')->middleware('auth');
