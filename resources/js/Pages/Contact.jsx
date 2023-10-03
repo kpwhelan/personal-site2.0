@@ -169,7 +169,7 @@ export default function Contact() {
                 </Card>
             }
 
-            <Footer className={'fixed bottom-0 right-0 left-0'} />
+            <Footer className={'md:fixed md:bottom-0 md:right-0 md:left-0'} />
         </div>
     );
 }
