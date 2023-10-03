@@ -97,7 +97,7 @@ export default function WhyChooseMeComponent({  }) {
             <div className="text-center mt-20">
                 <p className="text-2xl">Let's Build Something Amazing Together!</p>
                 <PrimaryButton className='bg-my-sage mt-2'>
-                    <p className='text-2xl'>Get Started Here!</p>
+                    <a href={route('contact')}><p className='text-2xl'>Get Started Here!</p></a>
                 </PrimaryButton>
             </div>
         </>

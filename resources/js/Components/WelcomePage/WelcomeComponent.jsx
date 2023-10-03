@@ -18,7 +18,7 @@ export default function WelcomeComponent({ className }) {
                 </p>
 
                 <PrimaryButton className='bg-my-sage mt-6 bg-opacity-80'>
-                    <p className='text-2xl'>Hit Me Up Here!</p>
+                    <a href={route('contact')}><p className='text-2xl'>Hit Me Up Here!</p></a>
                 </PrimaryButton>
             </div>
 

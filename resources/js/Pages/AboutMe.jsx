@@ -34,7 +34,7 @@ Oh, and did I mention my newfound love for fixing cars? Yep, I’m that guy who�
                     </Typography>
 
                     <Typography className="my-6">
-                    So, if you’re ready to transform your online presence from 'meh' to 'wow', let’s chat! Let's build something amazing together!.
+                    So, if you’re ready to transform your online presence from 'meh' to 'wow', let’s chat! Let's build something amazing together!
                     </Typography>
                 </CardBody>
             </Card>
