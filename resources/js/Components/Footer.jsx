@@ -11,7 +11,7 @@ import {
 export default function Footer({ className }) {
     return (
         <div className={`flex justify-between items-center p-2 md:p-4 border-t-2 border-t-my-sage border-b-2 border-b-my-sage mb-2 mt-36 ${className}`}>
-            <p className="text-xs">copyright &copy; {new Date().getFullYear()} · ALL RIGHTS RESERVED BY Kevin Whelan - TNSG Web Development</p>
+            <p className="text-xs">copyright &copy; {new Date().getFullYear()} · ALL RIGHTS RESERVED BY Kevin Whelan</p>
             <div className="hidden md:block">
                 <a href="https://www.instagram.com/kevpw_dev/" target="_blank" className="mx-2"><FontAwesomeIcon icon={faInstagram} size={'2x'} /></a>
                 <a href="https://twitter.com/kevpw_dev" target="_blank" className="mx-2"><FontAwesomeIcon icon={faXTwitter} size={'2x'} /></a>
