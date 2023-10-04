@@ -17,7 +17,7 @@ export default function WelcomeComponent({ className }) {
                     ...Don't forget to head over to my blog and check it out, and subscribe so you'll never miss a new post!
                 </p>
 
-                <PrimaryButton className='bg-my-sage mt-6 bg-opacity-80'>
+                <PrimaryButton className='bg-my-sage mt-6 mb-6 md:mb-0 bg-opacity-80'>
                     <a href={route('contact')}><p className='text-2xl'>Hit Me Up Here!</p></a>
                 </PrimaryButton>
             </div>
