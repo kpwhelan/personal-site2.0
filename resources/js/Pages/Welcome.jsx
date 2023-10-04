@@ -21,7 +21,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <div className='w-screen h-screen'>
                 <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
 
-                <WelcomeComponentContainer className={"flex md:justify-center text-my-gray mx-auto"}>
+                <WelcomeComponentContainer className={"flex md:justify-center text-my-gray mx-auto mb-6 md:mb-0"}>
                     <WelcomeComponent className={"flex flex-col-reverse lg:flex-row lg:items-center lg:justify-around max-h-min p-4 lg:w-[60%] mt-36"} />
                 </WelcomeComponentContainer>
             </div>
