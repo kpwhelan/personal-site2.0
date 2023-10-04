@@ -143,7 +143,7 @@ export default function Contact() {
                     }
 
                     <div className="flex items-center justify-end mt-4">
-                        <PrimaryButton className="ml-4 bg-my-sage"  disabled={processing}>
+                        <PrimaryButton className="ml-4 bg-my-sage bg-opacity-80"  disabled={processing}>
                         <p className='text-lg'>Send It!</p>
                         </PrimaryButton>
                     </div>

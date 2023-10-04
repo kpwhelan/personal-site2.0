@@ -12,8 +12,8 @@ export default function WhyChooseMeComponent({  }) {
                 </h2>
 
                 <p className="mt-10 text-xl">
-                    Are you in search of a dedicated and skilled freelance web developer who can transform your web vision into a stunning, functional reality? <br />
-                    Look no further - Here's why you should choose me for your next web development project:
+                    Got an idea for a website or app? Need a site for your business or blog? Old site need a refresh? Whatever your web needs are, I have you covered! <br />
+                    Here's why you should choose me...
                 </p>
             </div>
 
@@ -96,7 +96,7 @@ export default function WhyChooseMeComponent({  }) {
 
             <div className="text-center mt-20">
                 <p className="text-2xl">Let's Build Something Amazing Together!</p>
-                <PrimaryButton className='bg-my-sage mt-2'>
+                <PrimaryButton className='bg-my-sage mt-2 bg-opacity-80'>
                     <a href={route('contact')}><p className='text-2xl'>Get Started Here!</p></a>
                 </PrimaryButton>
             </div>

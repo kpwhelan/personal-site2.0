@@ -1,6 +1,7 @@
 import HeaderSectionContainer from "@/Components/AboutMePage/HeaderSection";
 import HeaderSectionComponent from "@/Components/AboutMePage/HeaderSectionComponent";
 import Footer from "@/Components/Footer";
+import PrimaryButton from "@/Components/PrimaryButton";
 import Navbar from "@/Components/WelcomePage/Navbar";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 
@@ -26,7 +27,7 @@ export default function AboutMe() {
                     Ever since I wrote my first line of code, I knew I was destined for a life in the tech world. I’ve spent years crafting sleek and functional websites, turning complex code into user-friendly digital experiences, and ensuring your online presence shines brighter than my kid's smiles on a candy day!
                     </Typography>
                     <Typography className="my-6">
-                    When I'm not busy typing away, you'll find me surrounded by my amazing tribe – my amzing wife, our four chaos makers (aka our kids), and probably a guitar or two. Family time is sacred, and it’s where I draw my inspiration to be successfull and work hard every day.
+                    When I'm not busy writing code, you'll find me surrounded by my family – my amzing wife, our four chaos makers (aka our kids), our dog Rain, and probably a guitar or two. Family time is important to me, and it’s where I draw my inspiration to be successfull and work hard every day.
                     </Typography>
                     <Typography className="my-6">
                     From Code to Carburetors -
@@ -34,8 +35,11 @@ Oh, and did I mention my newfound love for fixing cars? Yep, I’m that guy who�
                     </Typography>
 
                     <Typography className="my-6">
-                    So, if you’re ready to transform your online presence from 'meh' to 'wow', let’s chat! Let's build something amazing together!
+                    So, if you’re ready to transform your online presence from 'meh' to 'wow', let’s chat!
                     </Typography>
+                    <PrimaryButton className='bg-my-sage mt-2 bg-opacity-80'>
+                        <a href={route('contact')}><p className='text-2xl'>Hit Me Up Here!</p></a>
+                    </PrimaryButton>
                 </CardBody>
             </Card>
 
