@@ -18,16 +18,18 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
+            <div className='w-screen h-screen'>
+                <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
 
-            <WelcomeComponentContainer className={"flex md:justify-center text-my-gray mx-auto"}>
-                <WelcomeComponent className={"flex flex-col-reverse lg:flex-row lg:items-center lg:justify-around max-h-min p-4 lg:w-[60%] mt-36"} />
-            </WelcomeComponentContainer>
+                <WelcomeComponentContainer className={"flex md:justify-center text-my-gray mx-auto"}>
+                    <WelcomeComponent className={"flex flex-col-reverse lg:flex-row lg:items-center lg:justify-around max-h-min p-4 lg:w-[60%] mt-36"} />
+                </WelcomeComponentContainer>
+            </div>
 
-            <div className='mx-auto text-center md:mt-40'>
+            {/* <div className='mx-auto text-center md:mt-40'>
                 <p>Keep Scrolling, We're Just Getting Started...</p>
                 <FontAwesomeIcon icon={faArrowDownLong} size='2x' className='opacity-70 animate-pulse'/>
-            </div>
+            </div> */}
 
             <WhyChooseMeContainer className={"border-t-2 border-t-my-sage mt-20 pt-20"}>
                 <WhyChooseMeComponent  />
