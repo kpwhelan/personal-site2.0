@@ -20,7 +20,7 @@ export default function Admin({ records }) {
                         Email: {record.email}
                     </Typography>
                     <Typography>
-                        Message: {record.message}
+                        Message: <pre>{record.message}</pre>
                     </Typography>
                 </CardBody>
             </Card>
