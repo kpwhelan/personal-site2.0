@@ -41,6 +41,7 @@ Route::get('/blog', function() {
 Route::post('/contact', [ContactController::class, 'postContact'])->name('send-contact');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('get-admin')->middleware('auth');
+Route::post('admin/mark-as-responded', [AdminController::class, 'markRecordAsResponded'])->name('mark-as-responded')->middleware('auth');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
