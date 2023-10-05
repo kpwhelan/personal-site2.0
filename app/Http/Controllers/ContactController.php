@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewContact;
 use App\Models\ContactRecord;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller {
     public function postContact(Request $request) {
@@ -21,6 +25,17 @@ class ContactController extends Controller {
         $contact_record->message = $request['message'];
 
         if (!$contact_record->save()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Something went wrong, please try again.'
+            ], 500);
+        }
+
+        try {
+            Mail::to('kevin@kevinwhelandev.com')->send(new NewContact($contact_record));
+        } catch(Exception $exception) {
+            Log::error($exception);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Something went wrong, please try again.'
