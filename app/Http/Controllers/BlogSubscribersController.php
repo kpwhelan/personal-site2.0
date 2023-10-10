@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\BlogSubscriber;
 use Illuminate\Http\Request;
+use Newsletter;
 
 class BlogSubscribersController extends Controller {
     public function addBlogSubscriber(Request $request) {
@@ -19,7 +20,7 @@ class BlogSubscribersController extends Controller {
         $blog_subscriber->name = $request['name'];
         $blog_subscriber->email = $request['email'];
 
-        if (!$blog_subscriber->save()) {
+        if (!$blog_subscriber->save() || !$this->addMailchimpSubscriber($blog_subscriber->name, $blog_subscriber->email)) {
             return response()->json([
                 'success' => false,
                 'message' => 'Sorry, we\'re having trouble, try again.'
@@ -30,5 +31,11 @@ class BlogSubscribersController extends Controller {
             'success' => true,
             'message' => 'Thanks for subscribing!'
         ]);
+    }
+
+    private function addMailchimpSubscriber(String $name, String $email): bool {
+       if (!Newsletter::subscribeOrUpdate('kevinpwhelan1@gmail.com', ['FNAME' => 'Kevin'])) return false;
+
+       return true;
     }
 }
