@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\BlogSubscriber;
+use Exception;
 use Illuminate\Http\Request;
-use Newsletter;
+use Illuminate\Support\Facades\Log;
+use Spatie\Newsletter\Facades\Newsletter as Newsletter;
 
 class BlogSubscribersController extends Controller {
     public function addBlogSubscriber(Request $request) {
@@ -20,7 +22,20 @@ class BlogSubscribersController extends Controller {
         $blog_subscriber->name = $request['name'];
         $blog_subscriber->email = $request['email'];
 
-        if (!$blog_subscriber->save() || !$this->addMailchimpSubscriber($blog_subscriber->name, $blog_subscriber->email)) {
+        if (!$this->addMailchimpSubscriber($blog_subscriber->name, $blog_subscriber->email)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Sorry, we\'re having trouble, try again.'
+            ], 500);
+        }
+
+        if (!$blog_subscriber->save()) {
+            try {
+                Newsletter::unsubscribe($blog_subscriber->email);
+            } catch(Exception $e) {
+                Log::error($e);
+            }
+
             return response()->json([
                 'success' => false,
                 'message' => 'Sorry, we\'re having trouble, try again.'
@@ -34,8 +49,12 @@ class BlogSubscribersController extends Controller {
     }
 
     private function addMailchimpSubscriber(String $name, String $email): bool {
-       if (!Newsletter::subscribeOrUpdate('kevinpwhelan1@gmail.com', ['FNAME' => 'Kevin'])) return false;
+        if ($this->isSubscribedToMailChimp($email) || !Newsletter::subscribeOrUpdate($email, ['FNAME' => $name])) return false;
 
        return true;
+    }
+
+    private function isSubscribedToMailChimp(String $email): bool {
+        return Newsletter::isSubscribed($email);
     }
 }

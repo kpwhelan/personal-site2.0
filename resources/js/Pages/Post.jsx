@@ -49,7 +49,6 @@ export default function Post({ post }) {
             }
         })
         .catch(error => {
-            console.log(error)
             setResponseMessage(error.response.data.message);
             setShowError(true);
             setProcessing(false);
@@ -78,10 +77,10 @@ export default function Post({ post }) {
                     <div className='mt-16'>
                         {showForm &&
                         <>
-                                <div className='w-[80%]'>
-                                    <p className='text-2xl'>Be the First To Know When More Posts Like This Come Out!</p>
-                                    <p>Subscribe below and get new posts delivered right to your inbox!</p>
-                                </div>
+                            <div className='w-[80%]'>
+                                <p className='text-2xl'>Be the First To Know!</p>
+                                <p>Subscribe and get new posts delivered right to your inbox!</p>
+                            </div>
 
                             <form onSubmit={submit} className='w-[80%] mt-10'>
                                 <div className="mt-4">
