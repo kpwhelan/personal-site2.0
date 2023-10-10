@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogSubscribersController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PostsController;
+use App\Models\Post;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -35,13 +38,21 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/blog', function() {
-    return Inertia::render('Blog', []);
+    $posts = Post::all();
+    return Inertia::render('Blog', ['posts' => $posts]);
 })->name('blog');
 
 Route::post('/contact', [ContactController::class, 'postContact'])->name('send-contact');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('get-admin')->middleware('auth');
 Route::post('admin/mark-as-responded', [AdminController::class, 'markRecordAsResponded'])->name('mark-as-responded')->middleware('auth');
+
+Route::prefix('blog/posts')->group(function() {
+    Route::post('/', [PostsController::class, 'create'])->name('submitPost')->middleware(['auth']);
+    Route::get('/{id}', [PostsController::class, 'show'])->name('findPost');
+});
+
+Route::post('subscribe', [BlogSubscribersController::class, 'addBlogSubscriber'])->name('add-subscriber');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
