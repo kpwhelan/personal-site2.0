@@ -4,7 +4,7 @@ export default function Navbar({ className }) {
     return (
         <div className={className} >
             <div className='flex items-center'>
-                <a href={route('home')} className='ml-2'><img className="w-16" src={logo}></img></a>
+                <a href={route('home')} className='ml-2'><img className="w-16 hidden md:block" src={logo}></img></a>
                 <a href={route('home')} className='ml-2'><p className="text-xl font-extrabold">Kevin Whelan</p></a>
             </div>
 
