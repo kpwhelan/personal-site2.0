@@ -68,6 +68,7 @@ export default function Blog({ posts }) {
                         {showForm &&
                         <>
                             <div className='text-center md:text-left w-[100%]'>
+                                <img src={logo} className="max-w-[20%]"></img>
                                 <p className='text-2xl'>Subscribe So You Don't Miss Out!</p>
                                 <p>Subscribe below and get new posts delivered right to your inbox!</p>
                             </div>

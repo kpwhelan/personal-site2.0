@@ -78,6 +78,7 @@ export default function Post({ post }) {
                         {showForm &&
                         <>
                             <div className='w-[80%]'>
+                            <img src={logo} className="max-w-[20%]"></img>
                                 <p className='text-2xl'>Be the First To Know!</p>
                                 <p>Subscribe and get new posts delivered right to your inbox!</p>
                             </div>

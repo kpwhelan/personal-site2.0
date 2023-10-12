@@ -28,6 +28,7 @@
         "@material-tailwind/react": "^2.1.2",
         "@react-spring/web": "^9.7.3",
         "@uiw/react-md-editor": "^3.23.6",
+        "animate.css": "^4.1.1",
         "framer-motion": "^10.16.4",
         "react-loader-spinner": "^5.4.5",
         "react-markdown": "^9.0.0",
