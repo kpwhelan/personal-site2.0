@@ -59,7 +59,7 @@ export default function Post({ post }) {
             <Navbar className={"text-my-gray w-screen p-4 flex justify-around items-center border border-b-my-sage"} />
 
             <div className='flex flex-col lg:flex-row'>
-                <div className='w-[95%] lg:w-[70%] mx-auto'>
+                <div className='w-[95%] lg:w-[70%] mx-autol'>
                     <article className="w-[70%] mt-16 border-b-2 pb-10 mx-auto">
                         <img className='w-[90%] rounded-md object-cover object-center shadow-xl shadow-blue-gray-900/50' src={post.image_url}></img>
                         <p className="text-5xl mt-8">{post.title}</p>

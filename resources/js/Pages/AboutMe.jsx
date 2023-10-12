@@ -20,18 +20,18 @@ export default function AboutMe() {
                         About Me
                     </Typography>
                     <Typography className="my-6">
-                        Hey there! I’m Kevin Whelan, your friendly neighborhood web developer with a knack for coding, a passion for technology, and a guitar always within arm's reach. With four energetic kids and a love for all things digital, I’ve mastered the art of balancing chaos and creativity.
+                        Hey there! I’m Kevin Whelan, your friendly neighborhood web developer! I've got a knack for coding, a love for coffee, a passion for technology, and a guitar always within arm's reach. With four energetic kids and a love for all things digital, I’ve mastered the art of balancing chaos and creativity.
                     </Typography>
                     <Typography className="my-6">
                     A Tech Geek at Heart -
-                    Ever since I wrote my first line of code, I knew I was destined for a life in the tech world. I’ve spent years crafting sleek and functional websites, turning complex code into user-friendly digital experiences, and ensuring your online presence shines brighter than my kid's smiles on a candy day!
+                    Ever since I wrote my first line of code, I knew I was destined for a life in the tech world. I’ve spent years honing my craft, turning complex code into user-friendly digital experiences, and ensuring your online presence shines brighter than my kid's smiles !
                     </Typography>
                     <Typography className="my-6">
-                    When I'm not busy writing code, you'll find me surrounded by my family – my amzing wife, our four chaos makers (aka our kids), our dog Rain, and probably a guitar or two. Family time is important to me, and it’s where I draw my inspiration to be successfull and work hard every day.
+                    When I'm not busy writing code, you'll find me surrounded by my family – my amzing wife, our four chaos makers (aka our kids), our dog Rain, and probably a guitar or two. Family time is important to me, and it’s where I draw my inspiration to be successful and work hard every day.
                     </Typography>
                     <Typography className="my-6">
                     From Code to Carburetors -
-Oh, and did I mention my newfound love for fixing cars? Yep, I’m that guy who’s as comfortable under a car hood as I am behind a computer screen. Who knew that debugging an engine could be just as satisfying as debugging code? Life's full of surprises!
+                    Oh, and did I mention I have a love for fixing cars? Yep, I’m that guy who’s as comfortable under the hood of a car as I am behind a keyboard and mouse. Who knew that debugging an engine could be just as satisfying as debugging code? Life's full of surprises!
                     </Typography>
 
                     <Typography className="my-6">

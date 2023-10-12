@@ -6,7 +6,7 @@ export default function HeaderSectionComponent() {
         <>
             <div className="flex flex-wrap text-center justify-center xl:justify-between items-center  border-b-2 mt-10 p-2 rounded-md w-full">
                 <img src={MainImg} className='rounded-md'></img>
-                <p className='text-2xl'>Kevin Whelan - Web Wizard, Rock Star Wanna-be, Family Man</p>
+                <p className='text-2xl'>Kevin Whelan - Caffeinated, Bearded, Rugged</p>
             </div>
         </>
     )
