@@ -33,7 +33,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             </div>
 
             <div className='mx-auto text-center md:mt-40'>
-                <p>Keep Scrolling, We're Just Getting Started...</p>
+                <p>Keep Scrolling, because we're Just Getting Started...</p>
                 <FontAwesomeIcon icon={faArrowDownLong} size='2x' className='opacity-70 animate-pulse'/>
             </div>
 
