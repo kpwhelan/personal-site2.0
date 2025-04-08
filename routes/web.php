@@ -29,39 +29,39 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-// Route::get('/about-me', function () {
-//     return Inertia::render('AboutMe', []);
-// })->name('about-me');
+Route::get('/about-me', function () {
+    return Inertia::render('AboutMe', []);
+})->name('about-me');
 
-// Route::get('/contact', function () {
-//     return Inertia::render('Contact', []);
-// })->name('contact');
+Route::get('/contact', function () {
+    return Inertia::render('Contact', []);
+})->name('contact');
 
-// Route::get('/blog', function() {
-//     $posts = Post::all();
-//     return Inertia::render('Blog', ['posts' => $posts]);
-// })->name('blog');
+Route::get('/blog', function() {
+    $posts = Post::all();
+    return Inertia::render('Blog', ['posts' => $posts]);
+})->name('blog');
 
-// Route::post('/contact', [ContactController::class, 'postContact'])->name('send-contact');
+Route::post('/contact', [ContactController::class, 'postContact'])->name('send-contact');
 
-// Route::get('/admin', [AdminController::class, 'index'])->name('get-admin')->middleware('auth');
-// Route::post('admin/mark-as-responded', [AdminController::class, 'markRecordAsResponded'])->name('mark-as-responded')->middleware('auth');
+Route::get('/admin', [AdminController::class, 'index'])->name('get-admin')->middleware('auth');
+Route::post('admin/mark-as-responded', [AdminController::class, 'markRecordAsResponded'])->name('mark-as-responded')->middleware('auth');
 
-// Route::prefix('blog/posts')->group(function() {
-//     Route::post('/', [PostsController::class, 'create'])->name('submitPost')->middleware(['auth']);
-//     Route::get('/{id}', [PostsController::class, 'show'])->name('findPost');
-// });
+Route::prefix('blog/posts')->group(function() {
+    Route::post('/', [PostsController::class, 'create'])->name('submitPost')->middleware(['auth']);
+    Route::get('/{id}', [PostsController::class, 'show'])->name('findPost');
+});
 
-// Route::post('subscribe', [BlogSubscribersController::class, 'addBlogSubscriber'])->name('add-subscriber');
+Route::post('subscribe', [BlogSubscribersController::class, 'addBlogSubscriber'])->name('add-subscriber');
 
-// Route::get('/dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
 require __DIR__.'/auth.php';
